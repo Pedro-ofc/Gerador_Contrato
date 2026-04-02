@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Gerador de Contrato</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #f4f6f8;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h2>Gerador de Contrato</h2>
+
+<form action="/gerar" method="post">
+
+<input name="empresa" placeholder="Nome da Empresa" required>
+<input name="cnpj" placeholder="CNPJ" required>
+<input name="endereco" placeholder="Endereço completo">
+<input name="cep" placeholder="CEP">
+
+<input name="representante" placeholder="Nome do representante">
+<input name="cpf" placeholder="CPF">
+<input name="rg" placeholder="RG">
+
+<button type="submit">Gerar Contrato</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
