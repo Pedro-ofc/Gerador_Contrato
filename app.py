@@ -53,7 +53,7 @@ ____________________________________
 WPRINTER SOLUÇÕES
 """
 
-    nome_arquivo = f"contrato_{empresa.replace(' ', '_')}.txt"
+    nome_arquivo = f"contrato_{empresa.replace(' ', '_')}.docx"
     caminho = os.path.join(os.getcwd(), nome_arquivo)
 
     with open(caminho, 'w', encoding='utf-8') as f:
@@ -62,4 +62,4 @@ WPRINTER SOLUÇÕES
     return send_file(caminho, as_attachment=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
